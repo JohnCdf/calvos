@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="image/logo.png">
+    <title>About Calvos</title>
+</head>
+<body>
+<header>
+    <h1 id="mainheaderh1">Calvos Inc.</h1><h1 id="home">Home</h1><h1>Legal</h1>
+</header>
+<div id="body">
+    <div id="bodyhead"><h1>About Calvos</h1><a>Careers</a><a>Legal</a><a>Contact</a></div>
+    <hr/>
+    <h1>Our goal is to change the way the automotive industry manufactures</h1>
+    <p>Calvos Inc was founded in 2018 by Jahwill Morales, who wanted to change the conventional
+        motor trends and build his own products; since then, it has evolved from a small group of engineers to
+        an international company. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quam perferendis sint quisquam cum nisi eius provident magnam quia asperiores at laudantium veniam repellat, praesentium impedit, quae consectetur deleniti beatae.<p>
+
+</div>
+</body>
+<style>
+*{
+box-sizing: border-box;
+}
+hr{
+    min-height:1px;
+    color: lightgrey; /* old IE */
+    background-color: lightgrey; /* Modern Browsers */
+    border-radius: 1px;
+}
+body{
+margin: 0;
+padding: 0;
+background-color: #212121;
+color: white;
+font-family: 'Lato', sans-serif;
+text-align: center;
+height: 100%;
+
+}
+
+header{
+    min-width: 100vh;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:0;
+}
+#mainheaderh1{
+    margin-right: auto;
+}
+header h1{
+    transition: all .5s ease-in-out;
+    vertical-align: center;
+    margin:0;
+    padding:.5em;
+    min-height: 10vh;
+}
+header h1:hover{
+    background-color: white;
+    color: #212121;
+    padding-right:.8em;
+    padding-left: .8em;
+}
+#bodyhead a{
+    padding: .5em;
+}
+#body{
+    background-color: white;
+    color: black;
+    min-width: 100vh;
+    min-height: 100%;
+    height: 100vh;
+    margin:auto;
+    padding-top:1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    text-align: left;
+}
+p{
+    font-size: 1.2em;
+}
+#bodyhead{
+    min-width: 85vh;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+#bodyhead h1 {
+    margin-right: auto;
+}
+#bodyhead a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    #body{
+        min-height: 100%;
+    }
+}
+    p{
+        font-size: 2em;
+    }
+}
+</style>
+<script>
+$("#home").on("click",function(){
+    window.location = "index.html"
+})
+</script>
+</html>
