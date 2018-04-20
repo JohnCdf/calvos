@@ -7,9 +7,7 @@ var view = {
     }
 }
 
-
-$(document).ready(function(){
-    resizeDiv()
+resizeDiv()
     $(".card").hover(function(){
         $("#slidestart").animate({backgroundColor: 'rgba(33,33,33,0.5)'});
     },function(){
@@ -17,10 +15,7 @@ $(document).ready(function(){
         $("#slidestart").css("backgroundColor", "rgba(33,33,33,1)")
     })
 
-
-
-
-    let i = 0;
+    var i = 0;
     carPictures = returnCarpictures();
 
     setInterval(function(){
@@ -47,13 +42,11 @@ if($(window).scrollTop()>=$(window).height()){
 })
 
 $("#home-link").on("click", function(){
-
     document.getElementById("slidestart").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 })
 $("#aboutlink").on("click", function(){
     window.location = "about.html"
 })
-})//document end
 
 window.onresize = function(event) {
     resizeDiv();
