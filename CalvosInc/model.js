@@ -32,5 +32,7 @@ var latestlist = [
 ];
 
 var carPictures = [
-    "image/car1.jpg","image/car2.jpg", "https://images.hgmsites.net/hug/zenvo-st1_100457721_h.jpg"
+    "image/car1.jpg",
+    "image/car2.jpg",
+    "https://images.hgmsites.net/hug/zenvo-st1_100457721_h.jpg"
 ]
